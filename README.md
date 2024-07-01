@@ -1,34 +1,33 @@
-# React JS Landing Page Template
+# Villa Mulino al Vento booking website
 
-**
+This project is a React application designed to facilitate the booking of [Villa Mulino al Vento in Lipari](https://maps.app.goo.gl/bYjnZA9kHfvfid6w7). The app offers a user-friendly interface for browsing details and making reservations.
 
-# 🛎️🛎️ Good news! New & improved [V2](https://github.com/issaafalkattan/react-landing-page-template-2021) is out  
+## Built with
 
-**
+- React.js (^18.3.1)
+- React Router (^6.22.1)
+- HTML, CSS
+- Node.js (20.13.0)
 
+## Set up
 
-### <a href="https://react-landing-page-template-93ne.vercel.app/">LIVE DEMO</a> 
+Run `npm install` install dependencies related to React (the client). Check if React Router is installed, otherwise `npm install react-router-dom`.
+Run `npm start` to start the React app.
 
-## Description
-This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-All 'visual' data can be easily modified by changing the data.json file.
+### 3. Add your own data
 
-## Make it Yours!
-### 1. Preps
-You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
-
-### 2. Clone Files
-After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
-### 3. Add your own data 
-Change the data in the ```data.json``` file as well as add any images to ```public/img/```
-You can also change styles by modifying the ```public/css``` files.
-If you need the contact form to work, you also need to create an EmailJS account, and modify the ```src/components/contact.jsx``` file to replace your own service ID, template ID and Public Key
-
-## Like this project?
-<a href="https://www.buymeacoffee.com/issaaf">Buy my a coffee ☕️</a>
+Change the data in the `data.json` file as well as add any images to `public/img/`
+You can also change styles by modifying the `public/css` files.
+If you need the contact form to work, you also need to create an EmailJS account, and modify the `src/components/contact.jsx` file to replace your own service ID, template ID and Public Key
 
 ## Credits
-##### Free CSS 
+
+##### Villa Mulino al Vento
+
+##### Free CSS
+
 <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
 
 ##### Issaaf kattan
+
+Developed and designed with Issaaf kattan's [ReactJS based landing page template](https://github.com/issaafalkattan/React-Landing-Page-Template)
