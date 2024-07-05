@@ -5,7 +5,6 @@ This project is a React application designed to facilitate the booking of [Villa
 ## Built with
 
 - React.js (^18.3.1)
-- React Router (^6.22.1)
 - HTML, CSS
 - Node.js (20.13.0)
 
