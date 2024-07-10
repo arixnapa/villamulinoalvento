@@ -92,26 +92,22 @@
       "smallImage": "img/portfolio/18-small.jpg"
     }
   ],
-  "Team": [
+  "Services": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/services/1.jpg",
+      "name": "Animali consentiti"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "img/services/2.jpg",
+      "name": "Giardino recintato"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "img": "img/services/3.jpg",
+      "name": "Terrazza panoramica"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/services/4.jpg",
+      "name": "Cucina lavanderia"
     }
   ],
   "Contact": {

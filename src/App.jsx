@@ -3,7 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
 import { Gallery } from "./components/gallery";
-import { Team } from "./components/Team";
+import { Services } from "./components/services";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -26,7 +26,7 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
       <Gallery data={landingPageData.Gallery} />
-      <Team data={landingPageData.Team} />
+      <Services data={landingPageData.Services} />
       <Contact data={landingPageData.Contact} />
     </div>
   );
