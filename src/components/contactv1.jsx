@@ -13,8 +13,8 @@ export const Contact = (props) => {
               <p>
                 <a href="https://maps.app.goo.gl/uxbGfFNpwz7G2ToQA">
                   <span>
-                    <i className="fa fa-map-marker"></i> Indirizzo su Google
-                    Maps
+                    <i className="fa fa-map-marker"></i>{" "}
+                    <u>Indirizzo su Google Maps</u>
                   </span>
                 </a>
                 {props.data ? props.data.address : "loading"}

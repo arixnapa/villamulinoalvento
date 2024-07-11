@@ -8,9 +8,9 @@ export const Services = (props) => {
           <h2>Servizi</h2>
           <p>
             Villa Mulino al Vento dispone di un grande terrazzo con griglia
-            barbecue, una doccia solare, uno spazio-garage con 4 posti auto
-            coperti, un giardino, una cucina e una lavanderia - 2 lavatrici e 1
-            a asciugatrice - a uso comune.
+            barbecue, doccia solare, spazio-garage con 4 posti auto coperti,
+            giardino, cucina e lavanderia con due lavatrici e un'asciugatrice a
+            uso comune.
           </p>
         </div>
         <div id="row">

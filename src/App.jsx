@@ -3,7 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
 import { Gallery } from "./components/gallery";
-import { Team } from "./components/Team";
+import { Services } from "./components/services";
 import { Contact } from "./components/contactv1";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
