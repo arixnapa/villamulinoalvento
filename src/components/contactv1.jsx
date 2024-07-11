@@ -42,10 +42,8 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 Villa Mulino al Vento. Built with Issaaf Kattan and{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2024 Villa Mulino al Vento. Numero di registrazione
+            19083041C237996
           </p>
         </div>
       </div>
