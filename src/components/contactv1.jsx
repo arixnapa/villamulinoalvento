@@ -41,10 +41,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; 2024 Villa Mulino al Vento. Numero di registrazione
-            19083041C237996
-          </p>
+          <p>&copy; 2024 Villa Mulino al Vento. Codice CIR 19083041C237996</p>
         </div>
       </div>
     </div>
