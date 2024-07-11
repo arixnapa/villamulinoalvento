@@ -4,18 +4,18 @@
     "paragraph": "Ammira panorami mozzafiato sull'Etna e su Vulcano, albe e tramonti spettacolari in una villa di lusso con tutti i comfort per un soggiorno indimenticabile."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Prenota i tuoi prossimi soggiorni a Lipari presso Villa Mulino al Vento, una splendida villa con un unico proprietario che offre una delle viste più belle dell'isola. Situata a soli 5 km dal centro città, questa villa è il luogo ideale per una vacanza rilassante e rigenerante grazie ai suoi 3 appartamenti autonomi con ingresso indipendente. La villa dispone di un grande terrazzo con griglia barbecue, una doccia solare, uno spazio-garage con 4 posti auto coperti, un giardino, una cucina e una lavanderia a uso comune. Villa Mulino al Vento è la scelta perfetta per chi cerca una combinazione di comfort, bellezza naturale e praticità. Contattaci oggi stesso per prenotare il tuo soggiorno e vivere un'esperienza indimenticabile sull'isola di Lipari.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Camera matrimoniale",
+      "Salotto con divano letto",
+      "Aria condizionata",
+      "Televisore"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Cucina completa",
+      "Bagno con doccia",
+      "Asciugamani",
+      "Terrazzo privato"
     ]
   },
   "Gallery": [
@@ -92,26 +92,22 @@
       "smallImage": "img/portfolio/18-small.jpg"
     }
   ],
-  "Team": [
+  "Services": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/services/1.jpg",
+      "name": "Animali consentiti"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "img/services/2.jpg",
+      "name": "Giardino recintato"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "img": "img/services/3.jpg",
+      "name": "Terrazza panoramica"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/services/4.jpg",
+      "name": "Cucina lavanderia"
     }
   ],
   "Contact": {

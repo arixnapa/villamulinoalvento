@@ -306,21 +306,21 @@ header .intro-text {
   margin-bottom: 10px;
 }
 
-/* Team Section */
-#team {
+/* Services Section */
+#services {
   padding: 100px 0;
 }
-#team h4 {
+#services h4 {
   margin: 5px 0;
 }
-#team .team-img {
+#services .service-img {
   width: 240px;
 }
-#team .thumbnail {
+#services .thumbnail {
   background: transparent;
   border: 0;
 }
-#team .thumbnail .caption {
+#services .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
 }
