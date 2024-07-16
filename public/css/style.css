@@ -306,6 +306,11 @@ header .intro-text {
   margin-bottom: 10px;
 }
 
+.gallery-video {
+  max-width: 1167;
+  height: auto;
+}
+
 /* Services Section */
 #services {
   padding: 100px 0;
