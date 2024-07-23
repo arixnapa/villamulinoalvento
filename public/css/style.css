@@ -305,6 +305,19 @@ header .intro-text {
   margin-top: 50px;
   margin-bottom: 10px;
 }
+.image-row {
+  max-height: 500px;
+}
+
+.carousel-item img {
+  width: 1000px;
+  height: 667px;
+  object-fit: cover;
+}
+
+.modal-lg {
+  max-width: 1000px;
+}
 
 /* Services Section */
 #services {

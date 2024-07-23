@@ -13,15 +13,18 @@ const renderImagesInGroups = (data) => {
   const titles = ["Residenza OVEST", "Residenza SUD", "Residenza EST"];
   const chunks = chunkArray(data, 6);
 
-  return chunks.map((chunk, index) => (
-    <div key={`chunk-${index}`}>
+  return chunks.map((chunk, chunkIndex) => (
+    <div key={`chunk-${chunkIndex}`}>
       <div className="residence-title">
-        <h3>{titles[index]}</h3>
+        <h3>{titles[chunkIndex]}</h3>
       </div>
-      <div className="row">
+      <div className="row image-row">
         {chunk.map((d, i) => (
-          <div key={`${index}-${i}`} className="col-sm-6 col-md-4 col-lg-4">
-            <Image largeImage={d.largeImage} smallImage={d.smallImage} />
+          <div
+            key={`${chunkIndex}-${i}`}
+            className="col-sm-6 col-md-4 col-lg-4"
+          >
+            <Image images={data} index={chunkIndex * 6 + i} />
           </div>
         ))}
       </div>
