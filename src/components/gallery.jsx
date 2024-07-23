@@ -35,18 +35,10 @@ export const Gallery = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Galleria</h2>
-          <div className="portfolio-item">
-            <video
-              className="gallery-video"
-              controls={false}
-              muted
-              autoPlay
-              loop
-            >
+          {/* <video controls={false} muted autoPlay loop>
               <source src="img/villa1280x720.mp4" type="video/mp4" /> Video non
               supportato
-            </video>
-          </div>
+            </video> */}
         </div>
         <div className="portfolio-items">
           {props.data ? renderImagesInGroups(props.data) : "Loading..."}
