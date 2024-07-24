@@ -39,7 +39,7 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>Galleria</h2>
         </div>
-        <div className="portfolio-items">
+        <div className="portfolio-item">
           {props.data ? renderImagesInGroups(props.data) : "Loading..."}
         </div>
       </div>
