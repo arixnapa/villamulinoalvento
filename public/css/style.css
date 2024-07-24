@@ -205,7 +205,6 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table;
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
@@ -307,8 +306,7 @@ header .intro-text {
 }
 
 .gallery-video {
-  max-width: 1167;
-  height: auto;
+  width: 100%;
 }
 
 /* Services Section */

@@ -48,7 +48,7 @@ export const Gallery = (props) => {
             </video>
           </div>
         </div>
-        <div className="portfolio-items">
+        <div className="portfolio-item">
           {props.data ? renderImagesInGroups(props.data) : "Loading..."}
         </div>
       </div>
