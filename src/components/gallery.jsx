@@ -18,7 +18,7 @@ const renderImagesInGroups = (data) => {
       <div className="residence-title">
         <h3>{titles[chunkIndex]}</h3>
       </div>
-      <div className="row image-row">
+      <div className="row">
         {chunk.map((d, i) => (
           <div
             key={`${chunkIndex}-${i}`}
@@ -38,10 +38,12 @@ export const Gallery = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Galleria</h2>
-          {/* <video controls={false} muted autoPlay loop>
-              <source src="img/villa1280x720.mp4" type="video/mp4" /> Video non
-              supportato
-            </video> */}
+        </div>
+        <div className="portfolio-item">
+          <video controls={false} muted autoPlay loop className="gallery-video">
+            <source src="img/villa1280x720.mp4" type="video/mp4" /> Video non
+            supportato
+          </video>
         </div>
         <div className="portfolio-item">
           {props.data ? renderImagesInGroups(props.data) : "Loading..."}

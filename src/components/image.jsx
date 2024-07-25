@@ -74,11 +74,7 @@ export const Image = ({ images, index }) => {
                         <img
                           src={image.largeImage}
                           alt="..."
-                          style={{
-                            width: "1000px",
-                            height: "667px",
-                            objectFit: "cover",
-                          }}
+                          className="img-responsive carousel-image"
                         />
                       </div>
                     ))}
