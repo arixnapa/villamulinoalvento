@@ -205,7 +205,6 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table;
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
@@ -325,6 +324,10 @@ header .intro-text {
   flex-direction: column;
   align-items: center;
 }
+.gallery-video {
+  width: 100%;
+}
+
 /* Services Section */
 #services {
   padding: 60px 0;
