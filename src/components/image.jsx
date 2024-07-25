@@ -27,14 +27,12 @@ export const Image = ({ images, index }) => {
 
   return (
     <div className="portfolio-item">
-      <a>
-        <img
-          src={images[index].smallImage}
-          className="img-responsive"
-          alt="villa"
-          onClick={() => handleClick(index)}
-        />
-      </a>
+      <img
+        src={images[index].smallImage}
+        className="img-responsive"
+        alt="villa"
+        onClick={() => handleClick(index)}
+      />
 
       {showModal && (
         <div
@@ -79,7 +77,7 @@ export const Image = ({ images, index }) => {
                       </div>
                     ))}
                   </div>
-                  <a
+                  <div
                     className="left carousel-control"
                     role="button"
                     onClick={handlePrev}
@@ -89,8 +87,8 @@ export const Image = ({ images, index }) => {
                       aria-hidden="true"
                     ></span>
                     <span className="sr-only">Previous</span>
-                  </a>
-                  <a
+                  </div>
+                  <div
                     className="right carousel-control"
                     role="button"
                     onClick={handleNext}
@@ -100,7 +98,7 @@ export const Image = ({ images, index }) => {
                       aria-hidden="true"
                     ></span>
                     <span className="sr-only">Next</span>
-                  </a>
+                  </div>
                 </div>
               </div>
               <div className="modal-footer">
