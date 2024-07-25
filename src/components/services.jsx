@@ -13,7 +13,7 @@ export const Services = (props) => {
             uso comune.
           </p>
         </div>
-        <div id="row">
+        <div className="row">
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 team">

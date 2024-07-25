@@ -13,15 +13,18 @@ const renderImagesInGroups = (data) => {
   const titles = ["Residenza OVEST", "Residenza SUD", "Residenza EST"];
   const chunks = chunkArray(data, 6);
 
-  return chunks.map((chunk, index) => (
-    <div key={`chunk-${index}`}>
+  return chunks.map((chunk, chunkIndex) => (
+    <div key={`chunk-${chunkIndex}`}>
       <div className="residence-title">
-        <h3>{titles[index]}</h3>
+        <h3>{titles[chunkIndex]}</h3>
       </div>
       <div className="row">
         {chunk.map((d, i) => (
-          <div key={`${index}-${i}`} className="col-sm-6 col-md-4 col-lg-4">
-            <Image largeImage={d.largeImage} smallImage={d.smallImage} />
+          <div
+            key={`${chunkIndex}-${i}`}
+            className="col-sm-6 col-md-4 col-lg-4"
+          >
+            <Image images={data} index={chunkIndex * 6 + i} />
           </div>
         ))}
       </div>
@@ -35,10 +38,12 @@ export const Gallery = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Galleria</h2>
-          {/* <video controls={false} muted autoPlay loop>
-              <source src="img/villa1280x720.mp4" type="video/mp4" /> Video non
-              supportato
-            </video> */}
+        </div>
+        <div className="portfolio-item">
+          <video controls={false} muted autoPlay loop className="gallery-video">
+            <source src="img/villa1280x720.mp4" type="video/mp4" /> Video non
+            supportato
+          </video>
         </div>
         <div className="portfolio-item">
           {props.data ? renderImagesInGroups(props.data) : "Loading..."}
