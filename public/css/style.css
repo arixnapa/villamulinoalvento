@@ -295,7 +295,7 @@ header .intro-text {
 
 /* Portfolio Section */
 #portfolio {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
@@ -311,23 +311,31 @@ header .intro-text {
 
 .carousel-item img {
   width: 1000px;
-  height: 667px;
   object-fit: cover;
 }
 
 .modal-lg {
   max-width: 1000px;
 }
-
+#services,
+#portfolio {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Services Section */
 #services {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 #services h4 {
   margin: 5px 0;
 }
 #services .service-img {
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
+  height: auto;
 }
 #services .thumbnail {
   background: transparent;
