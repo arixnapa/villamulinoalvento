@@ -1,5 +1,6 @@
 body,
 html {
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -306,11 +307,11 @@ header .intro-text {
   margin-bottom: 10px;
 }
 .gallery-video {
-  width: 100%;
+  max-width: 100%;
 }
 /* Image component */
 .carousel-item img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
