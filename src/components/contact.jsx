@@ -1,46 +1,33 @@
-import { useState } from "react";
-// import emailjs from "emailjs-com";
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+
 export const Contact = (props) => {
-  // const [{ name, email, message }, setState] = useState(initialState);
+  const form = useRef();
+  const [status, setStatus] = useState("");
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setState((prevState) => ({ ...prevState, [name]: value }));
-  // };
-  // const clearState = () => setState({ ...initialState });
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        console.log("SERVICE_ID:", SERVICE_ID);
+        console.log("TEMPLATE_ID:", TEMPLATE_ID);
+        console.log("PUBLIC_KEY:", PUBLIC_KEY);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(name, email, message);
+        console.log("SUCCESS!", result.text);
+        setStatus("SUCCESS"); // Update status on success
+        form.current.reset(); // Clear form after successful submission
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        setStatus("FAILED"); // Update status on failure
+      }
+    );
+  };
 
-  //   {
-  //     /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
-  //   }
-
-  //   emailjs
-  //     .sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       e.target,
-  //       "YOUR_PUBLIC_KEY"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         clearState();
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
   return (
     <div>
       <div id="contact">
@@ -55,18 +42,17 @@ export const Contact = (props) => {
                   sull'isola di Lipari.
                 </p>
               </div>
-              {/* <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
-                        id="name"
-                        name="name"
+                        id="from_name"
+                        name="from_name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Nome"
                         required
-                        onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -75,12 +61,11 @@ export const Contact = (props) => {
                     <div className="form-group">
                       <input
                         type="email"
-                        id="email"
-                        name="email"
+                        id="reply_to"
+                        name="reply_to"
                         className="form-control"
                         placeholder="Email"
                         required
-                        onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -92,26 +77,38 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Messaggio"
                     required
-                    onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Invia richiesta
                 </button>
-              </form> */}
+              </form>
+              {status === "SUCCESS" && (
+                <p className="text-success">
+                  La tua email è stata inviata con successo!
+                </p>
+              )}
+              {status === "FAILED" && (
+                <p className="text-danger">
+                  C'è stato un errore, riprova più tardi.
+                </p>
+              )}
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Contatti</h3>
               <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Indirizzo
-                </span>
+                <a href="https://maps.app.goo.gl/uxbGfFNpwz7G2ToQA">
+                  <span>
+                    <i className="fa fa-map-marker"></i>{" "}
+                    <u>Indirizzo su Google Maps</u>
+                  </span>
+                </a>
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
@@ -132,16 +129,6 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2024 Villa Mulino al Vento. Built with Issaaf Kattan and{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
         </div>
       </div>
     </div>
