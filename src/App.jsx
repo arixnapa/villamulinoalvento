@@ -4,7 +4,8 @@ import { Header } from "./components/header";
 import { About } from "./components/about";
 import { Gallery } from "./components/gallery";
 import { Services } from "./components/services";
-import { Contact } from "./components/contactv1";
+import { Contact } from "./components/contact";
+import { Footer } from "./components/footer";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -28,6 +29,7 @@ const App = () => {
       <Gallery data={landingPageData.Gallery} />
       <Services data={landingPageData.Services} />
       <Contact data={landingPageData.Contact} />
+      <Footer />
     </div>
   );
 };
