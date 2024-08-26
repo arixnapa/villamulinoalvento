@@ -1,12 +1,14 @@
 # Villa Mulino al Vento booking website
 
-This project is a React application designed to facilitate the booking of [Villa Mulino al Vento in Lipari](https://maps.app.goo.gl/bYjnZA9kHfvfid6w7). The app offers a user-friendly interface for browsing details and making reservations.
+This project is a React application designed to facilitate the booking of [Villa Mulino al Vento in Lipari](https://maps.app.goo.gl/bYjnZA9kHfvfid6w7).
+The app offers a user-friendly interface for browsing details and making reservations throught a contact form with EmailJS.
 
 ## Built with
 
-- React.js (^18.3.1)
-- HTML, CSS
-- Node.js (20.13.0)
+- React.js ^18.3.1
+- HTML, CSS, Bootstrap v3.3.7
+- Node.js 20.13.0
+- EmailJS ^2.6.4
 
 ## Set up
 
@@ -18,6 +20,12 @@ Run `npm start` to start the React app.
 Change the data in the `data.json` file as well as add any images to `public/img/`
 You can also change styles by modifying the `public/css` files.
 If you need the contact form to work, you also need to create an EmailJS account, and modify the `src/components/contact.jsx` file to replace your own service ID, template ID and Public Key
+
+### 3. Deployment
+
+This app was deployed on Netlify:
+`staging`: https://staging-villamulinoalvento.netlify.app/
+`main`: https://villamulinoalvento.com/
 
 ## Credits
 
