@@ -10,7 +10,7 @@ const chunkArray = (array, chunkSize) => {
 };
 
 const renderImagesInGroups = (data) => {
-  const titles = ["Residenza OVEST", "Residenza SUD", "Residenza EST"];
+  const titles = ["Suite OVEST", "Suite SUD", "Suite EST"];
   const chunks = chunkArray(data, 6);
 
   return chunks.map((chunk, chunkIndex) => (

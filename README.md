@@ -1,14 +1,13 @@
 # Villa Mulino al Vento booking website
 
 This project is a React application designed to facilitate the booking of [Villa Mulino al Vento in Lipari](https://maps.app.goo.gl/bYjnZA9kHfvfid6w7).
-The app offers a user-friendly interface for browsing details and making reservations throught a contact form with EmailJS.
+The app offers a user-friendly interface for browsing details and making reservations.
 
 ## Built with
 
 - React.js ^18.3.1
 - HTML, CSS, Bootstrap v3.3.7
 - Node.js 20.13.0
-- EmailJS ^2.6.4
 
 ## Set up
 
